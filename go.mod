@@ -217,7 +217,7 @@ require (
 	cloud.google.com/go/iam v1.1.0 // indirect
 	code.cloudfoundry.org/clock v1.0.0 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
-	github.com/Azure/azure-amqp-common-go/v4 v4.1.0 // indirect
+	github.com/Azure/azure-amqp-common-go/v4 v4.2.0 // indirect
 	github.com/Azure/azure-pipeline-go v0.2.3 // indirect
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.7.0-beta.2 // indirect
@@ -484,3 +484,6 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
+
+// replace due to https://github.com/Azure/azure-event-hubs-go/issues/241
+replace github.com/Azure/azure-event-hubs-go/v3 => github.com/MSIT-BPSC-IOT/azure-event-hubs-go/v3 v3.5.0.2
